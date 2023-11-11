@@ -1,0 +1,6 @@
+<!-- predict_price.html -->
+<form method="post" action="{% url 'predict_price' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Predict Price</button>
+</form>
